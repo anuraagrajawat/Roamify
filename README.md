@@ -1,4 +1,4 @@
-# 🌱Exploria
+# 🌱Roamify
 A fully mobile responsive and captivating online tour booking landing page that brings the joy of travel closer to users.
 
 ## 📦Technologies
