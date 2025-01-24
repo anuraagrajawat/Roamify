@@ -5,9 +5,9 @@ emailjs.init('4sO-R-TYpnLPdB5Gm'); // Replace with your actual user ID
 emailjs.debug(true); // This will log additional debug information to the console
 
 const btnn = document.getElementById('bookNowBtn');
-const form = document.querySelector('#mail-form');
+const formm = document.querySelector('#mail-form');
 
-form.addEventListener('submit', function(event) {
+formm.addEventListener('submit', function(event) {
   event.preventDefault();
 
   btnn.disabled = true;
@@ -29,7 +29,7 @@ form.addEventListener('submit', function(event) {
   });
 
   // Uncomment this block to send the actual form data once the test works
-  // emailjs.sendForm(serviceID, templateID, form)
+  // emailjs.sendForm(serviceID, templateID, formm)
   //   .then(() => {
   //     btnn.disabled = false;
   //     btnn.innerText = 'Booked!';
