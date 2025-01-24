@@ -18,8 +18,12 @@
     <script defer src="/js/price.js"></script>
     <script defer src="/js/numcount.js"></script>
 
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+   <script type="text/javascript">
+   emailjs.init('4sO-R-TYpnLPdB5Gm')
+   </script>
     
 
 
@@ -323,7 +327,7 @@
                         <label for="email">
                             <input type="email" id="email" class="email-input" placeholder="example@domain.com">
                         </label>
-                        <button class="btn | email-submit-btn" value="Send Email"  onclick="sendEmail()" ><span>SUBMIT</span></button>
+                        <button class="btn | email-submit-btn" id="emailbhejo" value="Send Email"  onclick="sendEmail()" ><span>SUBMIT</span></button>
                         
                     </div>
                 </div>
