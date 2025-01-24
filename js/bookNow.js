@@ -5,7 +5,7 @@ emailjs.init('4sO-R-TYpnLPdB5Gm'); // Replace with your actual user ID
 emailjs.debug(true); // This will log additional debug information to the console
 
 const btn = document.getElementById('bookNowBtn');
-const form = document.querySelector('.details');
+const form = document.querySelector('#mail-form');
 
 form.addEventListener('submit', function(event) {
   event.preventDefault();
