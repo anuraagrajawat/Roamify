@@ -25,6 +25,9 @@
     .nav_blur {
         height: 6rem;
     }
+    .schedule-btn {
+    display: block; /* Make sure the button is not hidden */
+   }
 
     /* HERO-SECTION */
 
