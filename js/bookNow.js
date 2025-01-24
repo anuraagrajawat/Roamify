@@ -5,6 +5,11 @@ const form = document.querySelector('.details');
 
 bookNowBtn.addEventListener('click', function(event) {
   event.preventDefault();
+  console.log("Button clicked!");
+});
+
+bookNowBtn.addEventListener('click', function(event) {
+  event.preventDefault();
 
   bookNowBtn.disabled = true;
   bookNowBtn.innerText = 'Sending...';
