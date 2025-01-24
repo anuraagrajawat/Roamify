@@ -1,9 +1,5 @@
 // Initialize EmailJS with your user ID
 emailjs.init('4sO-R-TYpnLPdB5Gm'); // Replace with your actual user ID
-
-// Enable debugging for more detailed error messages
-emailjs.debug(true); // This will log additional debug information to the console
-
 const btnn = document.getElementById('bookNowBtn');
 const formm = document.querySelector('#mail-form');
 
