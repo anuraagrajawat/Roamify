@@ -132,41 +132,65 @@
 
 /* HAMBURGER MENU*/
 
+/* Hide hamburger menu container initially */
 .hamburger-container {
     display: none;
 }
 
-
-
+/* Hamburger menu style */
 .hamburger {
     position: fixed;
     top: 0;
     right: 0;
     z-index: 110;
-    transform: translate(100%, 0%);
-    color: rgb(255, 255, 255);
+    transform: translate(100%, 0%); /* Initially off-screen */
+    color: black;
     font-weight: var(--fw-light);
     height: 100vh;
     width: 85vw;
-    color:black;
-    background-size: cover;
-    background: rgba(199, 79, 6, 1.0);
-    background: radial-gradient(at center top, rgba(199, 79, 6, 1.0), rgba(242, 189, 152, 1.0));
-    background-blend-mode: hard-light;
-    box-shadow: -4px 0px 10px var(--neutral-900);
-    transition: all 500ms;
+    background-color: rgb(255, 184, 77); /* New background color */
+    background: radial-gradient(at center top, rgba(255, 184, 77, 1.0), rgba(255, 122, 0, 1.0)); /* Gradient for depth */
+    background-blend-mode: multiply;
+    box-shadow: -4px 0px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for better separation */
+    transition: transform 500ms ease; /* Smooth transition for sliding in */
+    border-radius: 10px 0 0 10px; /* Rounded corners on the left */
+    padding: 2rem; /* Padding for spacing */
 }
 
+/* When the hamburger menu is active, slide it in */
+.hamburger.active {
+    transform: translate(0, 0); /* Slide in the menu */
+}
+
+/* Navigation list inside the hamburger menu */
 .hamburger_nav_list {
+    display: flex;
     flex-direction: column;
-    margin: 3rem;
+    margin-top: 5rem; /* Add space from the top */
     gap: 2rem;
+    list-style-type: none;
+    padding: 0;
 }
 
+/* Add hover effects to the navigation items */
+.hamburger_nav_list li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    transition: color 300ms ease, transform 300ms ease;
+}
+
+.hamburger_nav_list li:hover {
+    color: rgb(255, 255, 255);
+    transform: translateX(10px); /* Slight move to the right on hover */
+}
+
+/* Transition effect for sliding the menu */
 .ham_transition {
-    transform: translateX(0%);
+    transform: translateX(0%); /* Apply this to trigger the transition */
 }
 
+/* Backdrop shadow when the menu is open */
 .hamburger_drop_shadow {
     position: fixed;
     height: 100%;
@@ -175,10 +199,12 @@
     top: 0;
     left: 0;
     text-align: end;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px); /* Enhanced blur effect */
     z-index: 90;
+    display: none; /* Initially hidden */
 }
 
+/* Button to close the hamburger menu */
 .hamburger_drop_shadow button {
     background-color: transparent;
     outline: none;
@@ -190,22 +216,40 @@
     position: absolute;
     top: 0;
     right: 0;
+    color: #fff;
+    font-size: 2rem;
 }
 
-.hamburger_nav_list+button {
+/* Hamburger icon button to toggle menu */
+.hamburger_nav_list + button {
     position: fixed;
     top: 0%;
     background-color: transparent;
     right: 4%;
     outline: none;
     border: none;
+    z-index: 110;
 }
 
-.hamburger_nav_list+button i {
+/* Hamburger icon styling */
+.hamburger_nav_list + button i {
     font-size: 6vh;
     color: rgb(255, 255, 255);
 }
 
+/* When the menu is active, show the backdrop shadow */
+.hamburger-container.active .hamburger_drop_shadow {
+    display: block;
+}
+
+/* Add some animations for the hamburger icon */
+.hamburger_nav_list + button i {
+    transition: transform 300ms ease;
+}
+
+.hamburger_nav_list + button:hover i {
+    transform: rotate(90deg); /* Rotate the hamburger icon on hover */
+}
 /* MODAL-SECTION */
 
 .modal_hidden {
