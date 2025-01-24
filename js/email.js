@@ -1,25 +1,20 @@
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+const btn = document.getElementById('emailbhejo');
 
-<script>
-    emailjs.init('4sO-R-TYpnLPdB5Gm');  /
+document.getElementByClassName('subscribe-form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-    const btn = document.getElementById('emailbhejo');
+   btn.value = 'Sending...';
 
-    document.getElementById('form')
-        .addEventListener('submit', function(event) {
-            event.preventDefault(); 
+   const serviceID = 'service_mzzk4o8';
+   const templateID = 'template_046438y';
 
-            btn.value = 'Sending...'; 
-            const serviceID = 'service_mzzk4o8';  
-            const templateID = 'template_046438y';  
-
-            emailjs.sendForm(serviceID, templateID, this)
-                .then(() => {
-                    btn.value = 'Sent!';  
-                    alert('Sent! a mail, Thank you for your query! We will get in touch with you shortly.');
-                }, (err) => {
-                    btn.value = 'Send Email';  // Reset button text on error
-                    alert('Error: ' + JSON.stringify(err));  // Show error message
-                });
-        });
-</script>
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
