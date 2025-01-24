@@ -14,10 +14,10 @@ form.addEventListener('submit', function(event) {
   btn.innerText = 'Booking...';
 
   const serviceID = 'service_mzzk4o8'; // Replace with your service ID
-  const templateID = 'template_046438y'; // Replace with your template ID
+  const templateID = 'template_ud9vgw4'; // Replace with your template ID
 
   // Send the email using hardcoded values for testing
-  emailjs.send('service_mzzk4o8', 'template_046438y', {
+  emailjs.send('service_mzzk4o8', 'template_ud9vgw4', {
     user_name: 'Test User',
     user_email: 'testuser@example.com',
     user_mobile: '1234567890',
