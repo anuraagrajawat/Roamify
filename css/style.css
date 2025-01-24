@@ -237,7 +237,7 @@
 }
 
 .modal_container {
-    background-image: url(https://github.com/PandeyAnukrati/Roamify/blob/main/img/modal_img.jpg?raw=true);
+    background-image: url(https://res.cloudinary.com/dj7ypks6y/image/upload/v1737738289/modal_img_khnjzt.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -342,7 +342,7 @@
 
 .wlc-left-container {
     color: rgb(255, 255, 255);
-    background-image: url("/img/welcome-image-1.png");
+    background-image: url(https://res.cloudinary.com/dj7ypks6y/image/upload/v1737712418/welcome-image-1_vl6aqm.png);
     background-position: center;
     background-size: cover;
     background-color: var(--neutral-700);
@@ -417,28 +417,28 @@
 }
 
 .destination-item-1 {
-    background-image: url(/img/img_1.jpeg);
+    background-image: url(https://res.cloudinary.com/dj7ypks6y/image/upload/v1737712416/img_1_kdh2bo.jpg);
     grid-column: span 2;
 }
 
 .destination-item-2 {
-    background-image: url(/img/img_2.jpeg);
+    background-image: url(https://res.cloudinary.com/dj7ypks6y/image/upload/v1737712417/img_2_yy5kr7.jpg);
     grid-row: span 2;
 }
 
 .destination-item-3 {
-    background-image: url(/img/img_3.jpeg);
+    background-image: url(https://res.cloudinary.com/dj7ypks6y/image/upload/v1737712417/img_3_rccnvd.jpg);
     grid-row: span 2;
     background-position: top;
 }
 
 .destination-item-4 {
-    background-image: url(/img/img-4.jpeg);
+    background-image: url(https://res.cloudinary.com/dj7ypks6y/image/upload/v1737712418/img-4_hcmlor.jpg);
     grid-column: span 1;
 }
 
 .destination-item-5 {
-    background-image: url(/img/img_5.jpeg);
+    background-image: url(https://res.cloudinary.com/dj7ypks6y/image/upload/v1737712419/img_5_a6zcm8.jpg);
     grid-column: span 2;
 }
 
@@ -462,15 +462,15 @@
 
 
 .price-content-1 .card-title {
-    background-image: url(/img/priceimg-1.jpeg);
+    background-image: url(https://res.cloudinary.com/dj7ypks6y/image/upload/v1737712420/priceimg-1_mix6gp.jpg);
 }
 
 .price-content-2 .card-title {
-    background-image: url(/img/priceimg-2.jpeg);
+    background-image: url(https://res.cloudinary.com/dj7ypks6y/image/upload/v1737712415/priceimg-2_ve3g78.jpg);
 }
 
 .price-content-3 .card-title {
-    background-image: url(/img/priceimg-3.jpeg);
+    background-image: url(https://res.cloudinary.com/dj7ypks6y/image/upload/v1737712416/priceimg-3_a9dafa.jpg);
 }
 
 .price-content-2 {
@@ -715,7 +715,7 @@
 }
 
 .achievement-container {
-    background-image: url(/img/numbers-image.jpg);
+    background-image: url(https://res.cloudinary.com/dj7ypks6y/image/upload/v1737712420/numbers-image_lqvps9.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
