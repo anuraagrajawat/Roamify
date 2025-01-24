@@ -4,6 +4,7 @@ function getQueryParams() {
     return {
         user_name: urlParams.get('user_name'),
         user_email: urlParams.get('user_email'),
+        user_mobile: urlParams.get('user_mobile'),
         user_package: urlParams.get('user_package')
     };
 }
@@ -16,6 +17,9 @@ function populateForm() {
     }
     if (params.user_email) {
         document.getElementById('email').value = params.user_email;
+    }
+    if (params.user_mobile) {
+        document.getElementById('mobile').value = params.user_mobile;
     }
     if (params.user_package) {
         document.getElementById('package').value = params.user_package;
