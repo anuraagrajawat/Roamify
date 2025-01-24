@@ -22,7 +22,7 @@ bookNowBtn.addEventListener('click', function(event) {
   }
 
   const serviceID = 'service_mzzk4o8';
-  const templateID = 'template_046438y';
+  const templateID = 'template_ud9vgw4';
 
   const templateParams = {
     name: name,
