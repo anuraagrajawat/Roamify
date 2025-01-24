@@ -14,7 +14,7 @@ form.addEventListener('submit', function(event) {
     .then(() => {
       btn.disabled = false;
       btn.innerText = 'Sent!'; 
-      alert('Email sent successfully!');
+      alert('Thank you for subscribing! We will get in touch with you shortly.');
     }, (err) => {
       btn.disabled = false;
       btn.innerText = 'Submit';
