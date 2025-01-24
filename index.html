@@ -12,6 +12,7 @@
 
     <script defer src="/js/navigation.js"></script>
     <script defer src="/js/hamburger.js"></script>
+     <script defer src="/js/email.js"></script>
     <script defer src="/js/herocontent.js"></script>
     <script defer src="/js/modal.js"></script>
     <script defer src="/js/welcome_section.js"></script>
@@ -322,14 +323,15 @@
                 </div>
                 <div class="subscribe-container">
                     <h4 class="sitemap-header">GET YOUR INBOX IN SHAPE</h4>
-                    <p>Be the first to know about exclusive deals, merch drops, newletter and more!</p>
-                    <div class="email-container">
+                    <p>Be the first to know about exclusive deals, merch drops, newsletter, and more!</p>
+                    <form id="form" class="email-container">
                         <label for="email">
-                            <input type="email" id="email" class="email-input" placeholder="example@domain.com">
+                            <input type="email" id="email" name="user_email" class="email-input" placeholder="example@domain.com" required>
                         </label>
-                        <button class="btn | email-submit-btn" id="emailbhejo" value="Send Email"  onclick="sendEmail()" ><span>SUBMIT</span></button>
-                        
-                    </div>
+                        <button class="btn | email-submit-btn" id="emailbhejo" type="submit"><span>SUBMIT</span></button>
+                    </form>
+                </div>
+
                 </div>
             </div>
         </section>
