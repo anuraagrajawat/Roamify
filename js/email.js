@@ -1,20 +1,26 @@
-const btn = document.getElementById('emailbhejo');
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+<script>
+    emailjs.init('your_user_id'); 
 
-   btn.value = 'Sending...';
+    const btn = document.getElementById('emailbhejo');
 
-   const serviceID = 'default_service';
-   const templateID = 'template_046438y';
+    document.getElementById('form')
+        .addEventListener('submit', function(event) {
+            event.preventDefault(); 
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
+            btn.value = 'Sending...'; 
+
+            const serviceID = 'service_mzzk4o8'; 
+            const templateID = 'template_046438y';  
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.value = 'Sent!';  
+                    alert('Sent! a mail to your E-Mail');
+                }, (err) => {
+                    btn.value = 'Send Email'; 
+                    alert('Error: ' + JSON.stringify(err));
+                });
+        });
+</script>
