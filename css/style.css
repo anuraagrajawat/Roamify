@@ -146,8 +146,7 @@
     font-weight: var(--fw-light);
     height: 100vh;
     width: 85vw;
-    background-color: var(--neutral-700);
-    background-image: url(/img/hamburger_menu.jpg);
+    background-color: var(--primary-400);
     background-size: cover;
     background-blend-mode: hard-light;
     box-shadow: -4px 0px 10px var(--neutral-900);
