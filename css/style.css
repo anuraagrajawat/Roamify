@@ -148,7 +148,7 @@
     font-weight: var(--fw-light);
     height: 100vh;
     width: 85vw;
-/*     background-color: var(--primary-400); */
+    color:black;
     background-size: cover;
     background: rgba(199, 79, 6, 1.0);
     background: radial-gradient(at center top, rgba(199, 79, 6, 1.0), rgba(242, 189, 152, 1.0));
