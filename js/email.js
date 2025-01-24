@@ -1,20 +1,23 @@
 const btn = document.getElementById('emailbhejo');
-const form = document.querySelector('.subscribe-form'); // or use getElementById if you have an ID for the form
+const form = document.querySelector('.subscribe-form');
 
 form.addEventListener('submit', function(event) {
   event.preventDefault();
 
-  btn.value = 'Sending...';
+  btn.disabled = true; 
+  btn.innerText = 'Sending...'; 
 
   const serviceID = 'service_mzzk4o8';
   const templateID = 'template_046438y';
 
   emailjs.sendForm(serviceID, templateID, form)
     .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
+      btn.disabled = false;
+      btn.innerText = 'Sent!'; 
+      alert('Email sent successfully!');
     }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+      btn.disabled = false;
+      btn.innerText = 'Submit';
+      alert('Failed to send email: ' + JSON.stringify(err));
     });
 });
