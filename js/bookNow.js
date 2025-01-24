@@ -15,7 +15,7 @@ formm.addEventListener('submit', function(event) {
   // Send the email using hardcoded values for testing
   emailjs.send('service_mzzk4o8', 'template_ud9vgw4', {
     user_name: 'Test User',
-    user_email: 'testuser@example.com',
+    user_email: 'meritation99@gmail.com',
     user_mobile: '1234567890',
     user_package: 'Solo Traveler'
   }).then(() => {
