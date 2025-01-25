@@ -2,9 +2,16 @@ emailjs.init('4sO-R-TYpnLPdB5Gm');
 
 const btnn = document.getElementById('bookNowBtn');
 const formm = document.querySelector('#mail-form');
+const closePopupBtn = document.getElementById("closePopupBtn");
 
 const serviceID = 'service_mzzk4o8';
 const templateID = 'template_ud9vgw4';
+const popup = document.getElementById("popup");
+
+closePopupBtn.addEventListener("click", function() {
+  popup.style.display = "none";
+  btnn.disabled = true;
+});
 
 formm.addEventListener('submit', function(event) {
   event.preventDefault();
@@ -16,12 +23,16 @@ formm.addEventListener('submit', function(event) {
     .then(() => {
       btnn.disabled = false;
       btnn.innerText = 'Booked!';
-      alert('Thank you for booking! We will get in touch with you shortly.');
+      const formElements = formm.elements;
+  for (let i = 0; i < formElements.length; i++) {
+    formElements[i].disabled = true;  // Disable each form element
+  }
+      popup.style.display = "block"; // Show the popup on success
     })
     .catch((err) => {
       btnn.disabled = false;
       btnn.innerText = 'BOOK NOW';
       console.error('EmailJS Error:', err);
-      alert('Failed to send email. Please check the console for details.');
+      popup.style.display = "block"; // Show the popup on error
     });
 });
