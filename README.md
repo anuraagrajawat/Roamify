@@ -1,4 +1,4 @@
-# 🌐Roamify
+# 🌐Roamify: Travel Made Easy
 A fully mobile-responsive and visually captivating online tour booking landing page, designed to bring the joy of travel closer to users and streamline the booking process.
 
 ## 📦Technologies
